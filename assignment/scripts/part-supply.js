@@ -22,15 +22,25 @@ let removedItem = supplyChanges.pop();
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
 supplyChanges.push(25);
-console.log(supplyChanges[5]);
+console.log(supplyChanges);
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
 //    - if it is a positive number (greater than 0), log 'Added x parts.'
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log('6. Showing supplyChanges...');
-for (let i=0; i<7; i++) {
-  console.log(i);
+for (let x=0; x<supplyChanges.length; x++){
+    console.log( 'Added', supplyChanges[x], 'parts.' );
+
+if (supplyChanges[x]>0){
+  console.log( 'Added', supplyChanges[x], 'parts.' );
+}
+else if (supplyChanges[x]===0){
+  console.log( 'No Change.' );
+}
+else {
+  console.log( 'Removed', supplyChanges[x], 'parts.' );
+}
 }
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
