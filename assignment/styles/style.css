@@ -1,1 +1,7 @@
 /* give your assignment a fun background color */
+html {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right, red, yellow);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
